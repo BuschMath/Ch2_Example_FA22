@@ -2,15 +2,21 @@
 
 using namespace std;
 
+const float pi = 3.14;
+
+float volume(float r, float h);
+
 int main()
 {
-	int iNum = 17;
-	int iNum2 = 5;
-	float fNum = 17;
-	float fNum2 = 7.1;
-	float x = fNum / iNum2;
+	float radius = 5.0;
+	float height = 5.0;
 
-	cout << x;
+	cout << volume(radius, height);
 
 	return 0;
+}
+
+float volume(float r, float h)
+{
+	return pi * pow(r, 2) * h;
 }
