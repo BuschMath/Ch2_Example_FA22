@@ -8,8 +8,9 @@ int main()
 	int iNum2 = 5;
 	float fNum = 17;
 	float fNum2 = 7.1;
+	float x = fNum / iNum2;
 
-	cout << int(fNum / iNum2) << endl << iNum % iNum2;
+	cout << x;
 
 	return 0;
 }
